@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b0d26">
+    <title>Pocket Relay: coding agent companion for iPhone and iPad</title>
+    <meta name="description" content="Pocket Relay is a native iPhone and iPad app for following and steering the coding agent running on your own computer. See what it is doing, approve or deny actions, and answer its questions. Works with Google Antigravity. In beta; coming soon to the App Store.">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <!-- SITE BASE URL: https://bpollak.github.io/pocket-relay-site/
+         Every absolute URL in this file is inside this block (down to END SITE BASE URL).
+         To move the site, replace that base string here and in robots.txt and sitemap.xml. -->
+    <link rel="canonical" href="https://bpollak.github.io/pocket-relay-site/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Pocket Relay">
+    <meta property="og:title" content="Pocket Relay: coding agent companion for iPhone and iPad">
+    <meta property="og:description" content="Pocket Relay is a native iPhone and iPad app for following and steering the coding agent running on your own computer. See what it is doing, approve or deny actions, and answer its questions. Works with Google Antigravity. In beta; coming soon to the App Store.">
+    <meta property="og:url" content="https://bpollak.github.io/pocket-relay-site/">
+    <meta property="og:image" content="https://bpollak.github.io/pocket-relay-site/assets/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="The Pocket Relay app icon, a round violet character with a cyan ring, beside the name Pocket Relay.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pocket Relay: coding agent companion for iPhone and iPad">
+    <meta name="twitter:description" content="Pocket Relay is a native iPhone and iPad app for following and steering the coding agent running on your own computer. See what it is doing, approve or deny actions, and answer its questions. Works with Google Antigravity. In beta; coming soon to the App Store.">
+    <meta name="twitter:image" content="https://bpollak.github.io/pocket-relay-site/assets/og.png">
+    <meta name="twitter:image:alt" content="The Pocket Relay app icon, a round violet character with a cyan ring, beside the name Pocket Relay.">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Pocket Relay",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "iOS",
+  "description": "A native iPhone and iPad app for following and steering the coding agent running on your own computer. It works with Google Antigravity on a Mac, Windows PC or Linux computer. Pocket Relay is an independent app and is not affiliated with Google.",
+  "url": "https://bpollak.github.io/pocket-relay-site/",
+  "image": "https://bpollak.github.io/pocket-relay-site/assets/app-icon-1024.png",
+  "author": {
+    "@type": "Person",
+    "name": "Brett Pollak"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is this made by Google?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Pocket Relay is an independent app. It is not affiliated with, endorsed by or sponsored by Google. Google and Antigravity are trademarks of Google LLC."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do I need to use it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An iPhone or iPad running iOS or iPadOS 26 or later, and a Mac, Windows PC or Linux computer running Google Antigravity with the Pocket Relay Bridge companion. The computer must be on, awake and reachable from your device."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I connect the app to my computer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Scan the QR code shown on your computer, which is the fastest way. Or pick a nearby computer on the same Wi‑Fi and enter a 6‑digit code. Codes last 10 minutes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Pocket Relay Bridge?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A small companion that runs on your computer so the app can connect to it. It can be added as a plugin inside Google Antigravity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What can I do from the app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chat with your agent and see replies stream in, see a one-line status of what it is doing, approve or deny actions, answer the agent's questions, review file changes, watch terminals, switch projects and models, and dictate with Voice Mode."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do my prompts and files go?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The app has no servers of its own. It connects only to computers you pair, over your local network or your own private network. The developer does not receive or store your prompts, files or voice. The coding agent on your computer sends prompts and project content to the AI model providers configured on that computer, and their terms apply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I try it without a computer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. A built-in demo mode lets you try the app with sample data. Nothing runs on a computer in demo mode."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When can I get it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pocket Relay is in beta testing through TestFlight and is not yet on the App Store. A release date and price have not been announced."
+      }
+    }
+  ]
+}
+    </script>
+    <!-- END SITE BASE URL -->
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <svg class="visually-hidden" width="0" height="0" aria-hidden="true" focusable="false"><defs><linearGradient id="float-body" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="0.5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#06b6d4"/></linearGradient><linearGradient id="float-grey" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9e9e9e"/><stop offset="0.5" stop-color="#808080"/><stop offset="1" stop-color="#949494"/></linearGradient></defs></svg>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Pocket Relay home"><img src="assets/apple-touch-icon.png" width="40" height="40" alt=""><span>Pocket Relay</span></a>
+      <nav aria-label="Primary"><a class="nav-anchor" href="#status">Status</a><a class="nav-anchor" href="#control">Control</a><a class="nav-anchor" href="#pairing">Pairing</a><a class="nav-anchor" href="#privacy">Privacy</a><a class="nav-anchor" href="#faq">FAQ</a><a class="nav-pill" href="support/">Support</a></nav>
+    </header>
+
+    <main id="main">
+      <section class="hero on-dark">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">iPhone · iPad · In beta</p>
+            <h1>Follow and steer your coding agent from your phone.</h1>
+            <p class="lede">Pocket Relay is a native iPhone and iPad app for the coding agent running on your own computer. See what it is doing, approve or deny its actions, and answer its questions. It works with Google Antigravity on a Mac, Windows PC or Linux computer.</p>
+            <div class="cta-row"><span class="soon-pill">Coming soon to the App Store</span><a class="button ghost" href="support/">Setup and support</a></div><p class="cta-note">In beta testing through TestFlight. Not yet on the App Store.</p>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-float"><svg class="float float--idle" viewBox="0 0 100 100" width="100" height="100" aria-hidden="true" focusable="false"><ellipse class="fl-shadow" cx="50" cy="93.5" rx="22" ry="3.5"/><g class="fl-bob"><g transform="translate(50 45) rotate(-18.33)"><path class="fl-ring fl-ring--far" d="M-40.3 0A40.3 10.4 0 0 1 40.3 0"/><g class="fl-moon fl-moon--far"><g class="fl-mx" transform="translate(40.3 0)"><g class="fl-my"><circle r="4.5"/></g></g></g></g><circle cx="50" cy="45" r="26" fill="url(#float-body)"/><ellipse cx="40.38" cy="30.44" rx="6.5" ry="4.16" fill="#fff" fill-opacity="0.28"/><g class="fl-look"><ellipse class="fl-eye" cx="40.64" cy="43.96" rx="3.9" ry="6.5"/><ellipse class="fl-eye" cx="59.36" cy="43.96" rx="3.9" ry="6.5"/></g><g transform="translate(50 45) rotate(-18.33)"><path class="fl-ring fl-ring--near" d="M40.3 0A40.3 10.4 0 0 1 -40.3 0"/><g class="fl-moon fl-moon--near"><g class="fl-mx" transform="translate(40.3 0)"><g class="fl-my"><circle r="4.5"/></g></g></g></g></g></svg></div>
+            <div class="phone"><picture><source type="image/webp" srcset="assets/screen-working.webp"><img src="assets/screen-working.png" width="736" height="1600" fetchpriority="high" alt="Pocket Relay chat screen in demo mode. A status strip pinned at the top reads Reading files, 1 step so far, beside the Float character holding a page. Below it are the conversation with the agent and a message field."></picture></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="strip" aria-label="What Pocket Relay does">
+        <ul class="shell strip-grid">
+          <li><strong>Chat with your agent</strong><span>replies stream in as they are written</span></li>
+          <li><strong>One-line status</strong><span>instead of pages of code and command output</span></li>
+          <li><strong>Approve or deny</strong><span>before commands run or files change</span></li>
+          <li><strong>Pair with a QR code</strong><span>or a 6‑digit code on the same Wi‑Fi</span></li>
+          <li><strong>No servers of its own</strong><span>connects only to computers you pair</span></li>
+        </ul>
+      </section>
+
+      <section id="status" class="band light">
+        <div class="shell feature-grid">
+          <div class="feature-copy">
+            <p class="eyebrow">Status</p>
+            <h2>See what it’s doing at a glance.</h2>
+            <p class="lede">A status strip stays at the top of the chat with one line about what the agent is doing, such as “Reading files · 1 step so far”. You get that line instead of pages of code and command output. The app’s character, Float, acts out each activity.</p>
+            <ul class="poses" aria-label="What Float shows for each activity"><li><svg class="float float--thinking" viewBox="0 0 100 100" width="100" height="100" aria-hidden="true" focusable="false"><ellipse class="fl-shadow" cx="50" cy="93.5" rx="22" ry="3.5"/><rect class="fl-bit" x="6.75" y="88.75" width="6.5" height="6.5" rx="1.95" fill="#06b6d4" opacity="0" transform="translate(0 -0)" style="animation-delay:-0s"/><rect class="fl-bit" x="87.75" y="89.75" width="4.5" height="4.5" rx="1.35" fill="#8b5cf6" opacity="0.56" transform="translate(0 -21.6)" style="animation-delay:-0.6s"/><rect class="fl-bit" x="16.75" y="88.75" width="6.5" height="6.5" rx="1.95" fill="#06b6d4" opacity="0.74" transform="translate(0 -43.2)" style="animation-delay:-1.2s"/><rect class="fl-bit" x="79.75" y="89.75" width="4.5" height="4.5" rx="1.35" fill="#8b5cf6" opacity="0.42" transform="translate(0 -64.8)" style="animation-delay:-1.8s"/><g class="fl-bob"><g transform="translate(50 45) rotate(-18.33)"><path class="fl-ring fl-ring--far" d="M-40.3 0A40.3 10.4 0 0 1 40.3 0"/><g class="fl-moon fl-moon--far"><g class="fl-mx" transform="translate(40.3 0)"><g class="fl-my"><circle r="4.5"/></g></g></g></g><circle cx="50" cy="45" r="26" fill="url(#float-body)"/><ellipse cx="40.38" cy="30.44" rx="6.5" ry="4.16" fill="#fff" fill-opacity="0.28"/><g class="fl-look"><ellipse class="fl-eye" cx="40.64" cy="43.96" rx="3.9" ry="6.5"/><ellipse class="fl-eye" cx="59.36" cy="43.96" rx="3.9" ry="6.5"/></g><g transform="translate(50 45) rotate(-18.33)"><path class="fl-ring fl-ring--near" d="M40.3 0A40.3 10.4 0 0 1 -40.3 0"/><g class="fl-moon fl-moon--near"><g class="fl-mx" transform="translate(40.3 0)"><g class="fl-my"><circle r="4.5"/></g></g></g></g></g></svg><span>Thinking</span></li><li><svg class="float float--reading" viewBox="0 0 100 100" width="100" height="100" aria-hidden="true" focusable="false"><ellipse class="fl-shadow" cx="42" cy="93.5" rx="22" ry="3.5"/><g class="fl-bob"><g transform="translate(42 45) rotate(-18.33)"><path class="fl-ring fl-ring--far" d="M-40.3 0A40.3 10.4 0 0 1 40.3 0"/><g class="fl-moon fl-moon--far"><g class="fl-mx" transform="translate(40.3 0)"><g class="fl-my"><circle r="4.5"/></g></g></g></g><circle cx="42" cy="45" r="26" fill="url(#float-body)"/><ellipse cx="32.38" cy="30.44" rx="6.5" ry="4.16" fill="#fff" fill-opacity="0.28"/><g class="fl-look" transform="translate(2.6 0)"><ellipse class="fl-eye" cx="32.64" cy="47.08" rx="3.9" ry="6.5"/><ellipse class="fl-eye" cx="51.36" cy="47.08" rx="3.9" ry="6.5"/></g><g transform="translate(42 45) rotate(-18.33)"><path class="fl-ring fl-ring--near" d="M40.3 0A40.3 10.4 0 0 1 -40.3 0"/><g class="fl-moon fl-moon--near"><g class="fl-mx" transform="translate(40.3 0)"><g class="fl-my"><circle r="4.5"/></g></g></g></g></g><g class="fl-prop"><rect x="62" y="50" width="30" height="38" rx="4" fill="#fff" stroke="#6366f1" stroke-opacity="0.45" stroke-width="1.5"/><rect class="fl-line fl-line--first" x="67" y="58" width="20" height="2.5" rx="1" style="animation-delay:0s"/><rect class="fl-line" x="67" y="65.5" width="20" height="2.5" rx="1" style="animation-delay:0.45s"/><rect class="fl-line" x="67" y="73" width="20" height="2.5" rx="1" style="animation-delay:0.91s"/><rect class="fl-line" x="67" y="80.5" width="13" height="2.5" rx="1" style="animation-delay:1.36s"/></g></svg><span>Reading files</span></li><li><svg class="float float--editing" viewBox="0 0 100 100" width="100" height="100" aria-hidden="true" focusable="false"><ellipse class="fl-shadow" cx="42" cy="93.5" rx="22" ry="3.5"/><g class="fl-bob"><g transform="translate(42 45) rotate(-18.33)"><path class="fl-ring fl-ring--far" d="M-40.3 0A40.3 10.4 0 0 1 40.3 0"/><g class="fl-moon fl-moon--far"><g class="fl-mx" transform="translate(40.3 0)"><g class="fl-my"><circle r="4.5"/></g></g></g></g><circle cx="42" cy="45" r="26" fill="url(#float-body)"/><ellipse cx="32.38" cy="30.44" rx="6.5" ry="4.16" fill="#fff" fill-opacity="0.28"/><g class="fl-look" transform="translate(3.64 0)"><ellipse class="fl-eye" cx="32.64" cy="47.08" rx="3.9" ry="6.5"/><ellipse class="fl-eye" cx="51.36" cy="47.08" rx="3.9" ry="6.5"/></g><g transform="translate(42 45) rotate(-18.33)"><path class="fl-ring fl-ring--near" d="M40.3 0A40.3 10.4 0 0 1 -40.3 0"/><g class="fl-moon fl-moon--near"><g class="fl-mx" transform="translate(40.3 0)"><g class="fl-my"><circle r="4.5"/></g></g></g></g></g><g class="fl-prop"><rect x="62" y="50" width="30" height="38" rx="4" fill="#fff" stroke="#6366f1" stroke-opacity="0.45" stroke-width="1.5"/><rect class="fl-line fl-line--first" x="67" y="58" width="20" height="2.5" rx="1" style="animation-delay:0s"/><rect class="fl-line" x="67" y="65.5" width="20" height="2.5" rx="1" style="animation-delay:0.45s"/><rect class="fl-line" x="67" y="73" width="20" height="2.5" rx="1" style="animation-delay:0.91s"/><rect class="fl-line" x="67" y="80.5" width="13" height="2.5" rx="1" style="animation-delay:1.36s"/><g class="fl-pen-y"><g class="fl-pen-x"><path d="M67 58L78 43" fill="none" stroke="#f59e0b" stroke-width="4.5" stroke-linecap="round"/><circle cx="67" cy="58" r="1.5" fill="#333"/></g></g></g></svg><span>Editing files</span></li><li><svg class="float float--command" viewBox="0 0 100 100" width="100" height="100" aria-hidden="true" focusable="false"><ellipse class="fl-shadow" cx="42" cy="93.5" rx="22" ry="3.5"/><g class="fl-bob"><g transform="translate(42 45) rotate(-18.33)"><path class="fl-ring fl-ring--far" d="M-40.3 0A40.3 10.4 0 0 1 40.3 0"/><g class="fl-moon fl-moon--far"><g class="fl-mx" transform="translate(40.3 0)"><g class="fl-my"><circle r="4.5"/></g></g></g></g><circle cx="42" cy="45" r="26" fill="url(#float-body)"/><ellipse cx="32.38" cy="30.44" rx="6.5" ry="4.16" fill="#fff" fill-opacity="0.28"/><g class="fl-look" transform="translate(3.64 0)"><ellipse class="fl-eye" cx="32.64" cy="47.08" rx="3.9" ry="6.5"/><ellipse class="fl-eye" cx="51.36" cy="47.08" rx="3.9" ry="6.5"/></g><g transform="translate(42 45) rotate(-18.33)"><path class="fl-ring fl-ring--near" d="M40.3 0A40.3 10.4 0 0 1 -40.3 0"/><g class="fl-moon fl-moon--near"><g class="fl-mx" transform="translate(40.3 0)"><g class="fl-my"><circle r="4.5"/></g></g></g></g></g><g class="fl-prop"><rect x="56" y="56" width="40" height="28" rx="5" fill="#1a1c2e"/><path d="M63 64L69 70L63 76" fill="none" stroke="#06b6d4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect class="fl-cursor" x="74" y="72.5" width="10" height="3" rx="1" fill="#fff"/></g></svg><span>Running a command</span></li><li><svg class="float float--searching" viewBox="0 0 100 100" width="100" height="100" aria-hidden="true" focusable="false"><ellipse class="fl-shadow" cx="42" cy="93.5" rx="22" ry="3.5"/><g class="fl-bob"><g transform="translate(42 45) rotate(-18.33)"><path class="fl-ring fl-ring--far" d="M-40.3 0A40.3 10.4 0 0 1 40.3 0"/><g class="fl-moon fl-moon--far"><g class="fl-mx" transform="translate(40.3 0)"><g class="fl-my"><circle r="4.5"/></g></g></g></g><circle cx="42" cy="45" r="26" fill="url(#float-body)"/><ellipse cx="32.38" cy="30.44" rx="6.5" ry="4.16" fill="#fff" fill-opacity="0.28"/><g class="fl-look" transform="translate(3.64 0)"><ellipse class="fl-eye" cx="32.64" cy="47.08" rx="3.9" ry="6.5"/><ellipse class="fl-eye" cx="51.36" cy="47.08" rx="3.9" ry="6.5"/></g><g transform="translate(42 45) rotate(-18.33)"><path class="fl-ring fl-ring--near" d="M40.3 0A40.3 10.4 0 0 1 -40.3 0"/><g class="fl-moon fl-moon--near"><g class="fl-mx" transform="translate(40.3 0)"><g class="fl-my"><circle r="4.5"/></g></g></g></g></g><g transform="translate(76 64)"><g class="fl-sx" transform="translate(6 0)"><g class="fl-sy"><circle r="11" fill="#fff" fill-opacity="0.75" stroke="#6366f1" stroke-width="3.5"/><path d="M7.92 7.92L17.6 17.6" fill="none" stroke="#6366f1" stroke-width="5" stroke-linecap="round"/></g></g></g></svg><span>Searching the project</span></li><li class="needs-you"><svg class="float float--waiting" viewBox="0 0 100 100" width="100" height="100" aria-hidden="true" focusable="false"><ellipse class="fl-shadow" cx="50" cy="93.5" rx="22" ry="3.5"/><g class="fl-bob"><g transform="translate(50 45) rotate(-18.33)"><path class="fl-ring fl-ring--far" d="M-40.3 0A40.3 10.4 0 0 1 40.3 0"/><g class="fl-moon fl-moon--far"><g class="fl-mx" transform="translate(40.3 0)"><g class="fl-my"><circle r="4.5"/></g></g></g></g><circle cx="50" cy="45" r="26" fill="url(#float-body)"/><ellipse cx="40.38" cy="30.44" rx="6.5" ry="4.16" fill="#fff" fill-opacity="0.28"/><g class="fl-look"><ellipse class="fl-eye" cx="40.64" cy="43.96" rx="3.9" ry="6.5"/><ellipse class="fl-eye" cx="59.36" cy="43.96" rx="3.9" ry="6.5"/></g><g transform="translate(50 45) rotate(-18.33)"><path class="fl-ring fl-ring--near" d="M40.3 0A40.3 10.4 0 0 1 -40.3 0"/><g class="fl-moon fl-moon--near"><g class="fl-mx" transform="translate(40.3 0)"><g class="fl-my"><circle r="4.5"/></g></g></g></g></g><g class="fl-ask"><circle cx="80" cy="20" r="15" fill="#f59e0b"/><path d="M68.75 26.75L61.25 38.75L77.75 33.5Z" fill="#f59e0b"/><text x="80" y="20.5" text-anchor="middle" dominant-baseline="central">?</text></g></svg><span>Needs your approval</span></li><li><svg class="float float--done" viewBox="0 0 100 100" width="100" height="100" aria-hidden="true" focusable="false"><ellipse class="fl-shadow" cx="50" cy="93.5" rx="22" ry="3.5"/><g class="fl-bob"><g transform="translate(50 45) rotate(-18.33)"><path class="fl-ring fl-ring--far" d="M-40.3 0A40.3 10.4 0 0 1 40.3 0"/><g class="fl-moon fl-moon--far"><g class="fl-mx" transform="translate(40.3 0)"><g class="fl-my"><circle r="4.5"/></g></g></g></g><circle cx="50" cy="45" r="26" fill="url(#float-body)"/><ellipse cx="40.38" cy="30.44" rx="6.5" ry="4.16" fill="#fff" fill-opacity="0.28"/><path class="fl-eye-line" stroke-width="3.12" d="M36.22 46.04Q40.64 38.24 45.06 46.04"/><path class="fl-eye-line" stroke-width="3.12" d="M54.94 46.04Q59.36 38.24 63.78 46.04"/><g transform="translate(50 45) rotate(-18.33)"><path class="fl-ring fl-ring--near" d="M40.3 0A40.3 10.4 0 0 1 -40.3 0"/><g class="fl-moon fl-moon--near"><g class="fl-mx" transform="translate(40.3 0)"><g class="fl-my"><circle r="4.5"/></g></g></g></g></g><path class="fl-spark" d="M7 22H21M14 15V29" stroke="#06b6d4" style="transform-origin:14px 22px;animation-delay:-0s"/><path class="fl-spark" d="M79 16H93M86 9V23" stroke="#f59e0b" style="transform-origin:86px 16px;animation-delay:-0.41s"/><path class="fl-spark" d="M83 58H97M90 51V65" stroke="#06b6d4" style="transform-origin:90px 58px;animation-delay:-0.81s"/></svg><span>Finished</span></li><li><svg class="float float--failed" viewBox="0 0 100 100" width="100" height="100" aria-hidden="true" focusable="false"><ellipse class="fl-shadow" cx="50" cy="93.5" rx="22" ry="3.5"/><g class="fl-bob"><g transform="translate(50 56) rotate(6.88)"><path class="fl-ring fl-ring--far" d="M-40.3 0A40.3 10.4 0 0 1 40.3 0"/></g><circle cx="50" cy="56" r="26" fill="url(#float-grey)"/><ellipse cx="40.38" cy="41.44" rx="6.5" ry="4.16" fill="#fff" fill-opacity="0.28"/><path class="fl-eye-line" stroke-width="2.86" d="M36.74 56.52H44.54"/><path class="fl-eye-line" stroke-width="2.86" d="M55.46 56.52H63.26"/><g transform="translate(50 56) rotate(6.88)"><path class="fl-ring fl-ring--near" d="M40.3 0A40.3 10.4 0 0 1 -40.3 0"/><circle class="fl-moon" cx="-29.72" cy="7.02" r="4.5"/></g></g></svg><span>Stopped with a problem</span></li></ul>
+          </div>
+          <div class="feature-visual">
+            <div class="phone"><picture><source type="image/webp" srcset="assets/screen-working.webp"><img src="assets/screen-working.png" width="736" height="1600" loading="lazy" decoding="async" alt="The same chat screen. The status strip under the project and model pickers shows Float holding a page next to the words Reading files, 1 step so far."></picture></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="control" class="band dark on-dark">
+        <div class="shell feature-grid flip">
+          <div class="feature-copy">
+            <p class="eyebrow">Approvals</p>
+            <h2>You stay in control.</h2>
+            <p class="lede">When the agent needs permission, the status strip says “Needs your approval” and the request appears as a card. You decide before a command runs or a file changes.</p>
+            <div class="points">
+              <div class="needs-you"><h3>Deny, Allow Once or Always</h3><p>Three buttons on each approval card. The card shows what the agent wants to do, for example the command it wants to run.</p></div>
+              <div><h3>Answer its questions</h3><p>When the agent asks you something, reply from the app.</p></div>
+              <div><h3>Review file changes</h3><p>Look over the changes the agent made to your files.</p></div>
+              <div><h3>Watch terminals</h3><p>Follow the terminals on your computer from your device.</p></div>
+            </div>
+            <p class="aside-note">You can also switch projects and models, and dictate with Voice Mode.</p>
+          </div>
+          <div class="feature-visual">
+            <div class="phone"><picture><source type="image/webp" srcset="assets/screen-approval.webp"><img src="assets/screen-approval.png" width="736" height="1600" loading="lazy" decoding="async" alt="Pocket Relay chat screen with the status strip reading Needs your approval, Tap to jump to it. An approval card shows the command swift test with three buttons: Deny, Allow Once and Always."></picture></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pairing" class="band light">
+        <div class="shell feature-grid">
+          <div class="feature-copy">
+            <p class="eyebrow">Setup</p>
+            <h2>Pair in seconds.</h2>
+            <p class="lede">A small companion called Pocket Relay Bridge runs on your computer. It can be added as a plugin inside Google Antigravity. Then connect the app in one of two ways.</p>
+            <div class="pair-methods">
+              <div>
+                <span class="tag">Fastest</span>
+                <h3>Scan a QR code</h3>
+                <ol class="steps">
+                  <li>On your computer, open the Pocket Relay panel in Antigravity, or choose “Pair iPhone or iPad…” from the Pocket Relay Bridge menu bar icon.</li>
+                  <li>A pairing QR code appears.</li>
+                  <li>Scan the code with the app.</li>
+                </ol>
+              </div>
+              <div>
+                <span class="tag">Same Wi‑Fi</span>
+                <h3>Enter a 6‑digit code</h3>
+                <ol class="steps">
+                  <li>Put your device and computer on the same Wi‑Fi.</li>
+                  <li>Pick your computer from the nearby list in the app.</li>
+                  <li>Enter the 6‑digit code.</li>
+                </ol>
+              </div>
+            </div>
+            <p class="aside-note">No computer nearby? A built-in demo mode lets you try the app with sample data. <a class="text-link" href="support/">Setup help</a></p>
+          </div>
+          <div class="feature-visual">
+            <div class="phone"><picture><source type="image/webp" srcset="assets/screen-welcome.webp"><img src="assets/screen-welcome.png" width="736" height="1600" loading="lazy" decoding="async" alt="Pocket Relay welcome screen showing the Float character and the heading Connect Your Computer."></picture></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="privacy" class="band dark on-dark">
+        <div class="shell">
+          <div class="privacy-head">
+            <p class="eyebrow">Privacy</p>
+            <h2>Private by design.</h2>
+            <p class="lede">The app has no servers of its own. It connects only to computers you pair, over your local network or your own private network.</p>
+          </div>
+          <div class="privacy-grid">
+            <div><h3>Nothing goes to the developer</h3><p>The developer does not receive or store your prompts, files or voice.</p></div>
+            <div><h3>No ads, analytics or tracking</h3><p>The app contains no advertising, analytics or tracking.</p></div>
+            <div><h3>Pairing token in the Keychain</h3><p>The token that links the app to your computer is stored in the iOS Keychain.</p></div>
+            <div><h3>Camera for pairing only</h3><p>The camera is used only to scan a pairing QR code.</p></div>
+            <div><h3>Microphone for Voice Mode only</h3><p>The microphone and speech recognition are used only in Voice Mode. Apple’s speech recognition may process your speech.</p></div>
+            <div><h3>Your computer’s model providers</h3><p>The coding agent on your computer sends prompts and project content to the AI model providers configured there. Their terms apply.</p></div>
+          </div>
+          <p class="aside-note"><a class="text-link" href="privacy/">Read the privacy policy</a></p>
+        </div>
+      </section>
+
+      <section id="why" class="band white">
+        <div class="shell narrow why">
+          <p class="eyebrow">Why it exists</p>
+          <h2>A note from the developer.</h2>
+          <p class="note">I built Pocket Relay so I could check on long agent runs and steer them when I am away from my desk. On a phone I wanted one line that says what the agent is doing, and a clear way to approve or deny what it asks for.</p>
+          <p class="signature">Brett Pollak, developer</p>
+        </div>
+      </section>
+
+      <section id="faq" class="band light">
+        <div class="shell narrow">
+          <p class="eyebrow">Questions</p>
+          <h2>Common questions.</h2>
+          <div class="faq-list"><details><summary>Is this made by Google?</summary><p>No. Pocket Relay is an independent app. It is not affiliated with, endorsed by or sponsored by Google. Google and Antigravity are trademarks of Google LLC.</p></details><details><summary>What do I need to use it?</summary><p>An iPhone or iPad running iOS or iPadOS 26 or later, and a Mac, Windows PC or Linux computer running Google Antigravity with the Pocket Relay Bridge companion. The computer must be on, awake and reachable from your device.</p></details><details><summary>How do I connect the app to my computer?</summary><p>Scan the QR code shown on your computer, which is the fastest way. Or pick a nearby computer on the same Wi‑Fi and enter a 6‑digit code. Codes last 10 minutes.</p></details><details><summary>What is Pocket Relay Bridge?</summary><p>A small companion that runs on your computer so the app can connect to it. It can be added as a plugin inside Google Antigravity.</p></details><details><summary>What can I do from the app?</summary><p>Chat with your agent and see replies stream in, see a one-line status of what it is doing, approve or deny actions, answer the agent&#x27;s questions, review file changes, watch terminals, switch projects and models, and dictate with Voice Mode.</p></details><details><summary>Where do my prompts and files go?</summary><p>The app has no servers of its own. It connects only to computers you pair, over your local network or your own private network. The developer does not receive or store your prompts, files or voice. The coding agent on your computer sends prompts and project content to the AI model providers configured on that computer, and their terms apply.</p></details><details><summary>Can I try it without a computer?</summary><p>Yes. A built-in demo mode lets you try the app with sample data. Nothing runs on a computer in demo mode.</p></details><details><summary>When can I get it?</summary><p>Pocket Relay is in beta testing through TestFlight and is not yet on the App Store. A release date and price have not been announced.</p></details></div>
+        </div>
+      </section>
+
+      <section class="band dark on-dark closing">
+        <div class="shell">
+          <div class="closing-float"><svg class="float float--done" viewBox="0 0 100 100" width="100" height="100" aria-hidden="true" focusable="false"><ellipse class="fl-shadow" cx="50" cy="93.5" rx="22" ry="3.5"/><g class="fl-bob"><g transform="translate(50 45) rotate(-18.33)"><path class="fl-ring fl-ring--far" d="M-40.3 0A40.3 10.4 0 0 1 40.3 0"/><g class="fl-moon fl-moon--far"><g class="fl-mx" transform="translate(40.3 0)"><g class="fl-my"><circle r="4.5"/></g></g></g></g><circle cx="50" cy="45" r="26" fill="url(#float-body)"/><ellipse cx="40.38" cy="30.44" rx="6.5" ry="4.16" fill="#fff" fill-opacity="0.28"/><path class="fl-eye-line" stroke-width="3.12" d="M36.22 46.04Q40.64 38.24 45.06 46.04"/><path class="fl-eye-line" stroke-width="3.12" d="M54.94 46.04Q59.36 38.24 63.78 46.04"/><g transform="translate(50 45) rotate(-18.33)"><path class="fl-ring fl-ring--near" d="M40.3 0A40.3 10.4 0 0 1 -40.3 0"/><g class="fl-moon fl-moon--near"><g class="fl-mx" transform="translate(40.3 0)"><g class="fl-my"><circle r="4.5"/></g></g></g></g></g><path class="fl-spark" d="M7 22H21M14 15V29" stroke="#06b6d4" style="transform-origin:14px 22px;animation-delay:-0s"/><path class="fl-spark" d="M79 16H93M86 9V23" stroke="#f59e0b" style="transform-origin:86px 16px;animation-delay:-0.41s"/><path class="fl-spark" d="M83 58H97M90 51V65" stroke="#06b6d4" style="transform-origin:90px 58px;animation-delay:-0.81s"/></svg></div>
+          <h2>Your agent, in your pocket.</h2>
+          <p class="lede">Pocket Relay is in beta testing and is coming to the App Store for iPhone and iPad. Requires iOS or iPadOS 26 or later.</p>
+          <div class="cta-row"><span class="soon-pill">Coming soon to the App Store</span><a class="button ghost" href="support/">Setup and support</a></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="shell">
+        <div class="footer-top">
+          <a class="brand" href="./" aria-label="Pocket Relay home"><img src="assets/apple-touch-icon.png" width="40" height="40" alt="" loading="lazy"><span>Pocket Relay</span></a>
+          <nav aria-label="Footer"><a href="./">Home</a><a href="support/">Support</a><a href="privacy/">Privacy</a><a href="terms/">Terms</a></nav>
+        </div>
+        <p>&copy; 2026 Brett Pollak. All rights reserved.</p>
+        <p>Pocket Relay is an independent app. It is not affiliated with, endorsed by or sponsored by Google. Google and Antigravity are trademarks of Google LLC.</p>
+      </div>
+    </footer>
+  </body>
+</html>

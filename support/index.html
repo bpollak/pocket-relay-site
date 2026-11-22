@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b0d26">
+    <title>Pocket Relay: support and setup for iPhone and iPad</title>
+    <meta name="description" content="Set up Pocket Relay on iPhone and iPad: pair with your computer by QR code or 6-digit code, fix connection problems, remove a computer, and try demo mode.">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" sizes="64x64" href="../assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/styles.css">
+
+    <!-- SITE BASE URL: https://bpollak.github.io/pocket-relay-site/
+         Every absolute URL in this file is inside this block (down to END SITE BASE URL).
+         To move the site, replace that base string here and in robots.txt and sitemap.xml. -->
+    <link rel="canonical" href="https://bpollak.github.io/pocket-relay-site/support/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Pocket Relay">
+    <meta property="og:title" content="Pocket Relay: support and setup for iPhone and iPad">
+    <meta property="og:description" content="Set up Pocket Relay on iPhone and iPad: pair with your computer by QR code or 6-digit code, fix connection problems, remove a computer, and try demo mode.">
+    <meta property="og:url" content="https://bpollak.github.io/pocket-relay-site/support/">
+    <meta property="og:image" content="https://bpollak.github.io/pocket-relay-site/assets/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="The Pocket Relay app icon, a round violet character with a cyan ring, beside the name Pocket Relay.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pocket Relay: support and setup for iPhone and iPad">
+    <meta name="twitter:description" content="Set up Pocket Relay on iPhone and iPad: pair with your computer by QR code or 6-digit code, fix connection problems, remove a computer, and try demo mode.">
+    <meta name="twitter:image" content="https://bpollak.github.io/pocket-relay-site/assets/og.png">
+    <meta name="twitter:image:alt" content="The Pocket Relay app icon, a round violet character with a cyan ring, beside the name Pocket Relay.">
+    <!-- END SITE BASE URL -->
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <svg class="visually-hidden" width="0" height="0" aria-hidden="true" focusable="false"><defs><linearGradient id="float-body" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="0.5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#06b6d4"/></linearGradient><linearGradient id="float-grey" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9e9e9e"/><stop offset="0.5" stop-color="#808080"/><stop offset="1" stop-color="#949494"/></linearGradient></defs></svg>
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="Pocket Relay home"><img src="../assets/apple-touch-icon.png" width="40" height="40" alt=""><span>Pocket Relay</span></a>
+      <nav aria-label="Primary"><a class="nav-extra" href="../">Home</a><a class="nav-pill" href="./" aria-current="page">Support</a><a class="nav-extra" href="../privacy/">Privacy</a><a class="nav-extra" href="../terms/">Terms</a></nav>
+    </header>
+
+    <main id="main">
+      <header class="page-hero on-dark">
+        <div class="shell">
+          <p class="eyebrow">Help</p>
+          <h1>Support and setup</h1>
+          <p class="lede">How to pair Pocket Relay with your computer, and what to check when it will not connect.</p>
+        </div>
+      </header>
+      <article class="shell prose">
+        <div class="callout">
+          <p><strong>Beta status.</strong> Pocket Relay is in beta testing through TestFlight and is not yet on the App Store.</p>
+        </div>
+
+        <h2 id="requirements">What you need</h2>
+        <ul>
+          <li>An iPhone or iPad running iOS or iPadOS 26 or later.</li>
+          <li>A Mac, Windows PC or Linux computer running Google Antigravity.</li>
+          <li>Pocket Relay Bridge, a small companion that runs on that computer. It can be added as a plugin inside Google Antigravity.</li>
+          <li>The computer must be on, awake and reachable from your device.</li>
+        </ul>
+
+        <h2 id="pairing">Pair with your computer</h2>
+        <h3>Scan a QR code (fastest)</h3>
+        <ol>
+          <li>On your computer, open the Pocket Relay panel in Antigravity, or choose “Pair iPhone or iPad…” from the Pocket Relay Bridge menu bar icon. A pairing QR code appears.</li>
+          <li>Open Pocket Relay on your iPhone or iPad and choose to connect your computer.</li>
+          <li>Scan the QR code. The app asks for camera access the first time; the camera is used only for this.</li>
+        </ol>
+        <h3>Enter a 6‑digit code</h3>
+        <ol>
+          <li>Connect your device and your computer to the same Wi‑Fi network.</li>
+          <li>In the app, pick your computer from the list of nearby computers.</li>
+          <li>Enter the 6‑digit code. Codes last 10 minutes.</li>
+        </ol>
+
+        <h2 id="troubleshooting">Troubleshooting</h2>
+        <h3>The app cannot reach my computer</h3>
+        <p>Check that the computer is turned on and awake. A computer that is asleep cannot be reached. Then check that Google Antigravity and Pocket Relay Bridge are running on it.</p>
+        <h3>My computer is not in the nearby list</h3>
+        <p>The nearby list shows computers on the same Wi‑Fi as your device. Make sure both are on the same network, or pair by scanning the QR code instead.</p>
+        <h3>The code was not accepted</h3>
+        <p>Pairing codes last 10 minutes. If yours has expired, pick your computer in the app again to get a new code, then enter that one.</p>
+        <h3>It works at home but not elsewhere</h3>
+        <p>The app has no servers of its own. It connects to your computer over your local network or your own private network, so your device must be able to reach the computer on one of those.</p>
+
+        <h2 id="remove">Remove a computer</h2>
+        <p>In the app, open Manage Hosts and delete the computer. This removes that computer and its pairing from the app. To remove everything the app has stored, delete the app.</p>
+
+        <h2 id="demo">Demo mode</h2>
+        <p>Pocket Relay has a built-in demo mode that lets you try the app with sample data, without a computer. In demo mode nothing runs on a computer.</p>
+
+        <h2 id="contact">Contact</h2>
+        <!-- CONTACT_EMAIL_TBD -->
+        <p>Contact details will be added before public release.</p>
+        <p>Developer: Brett Pollak. See also the <a href="../privacy/">privacy policy</a> and <a href="../terms/">terms of use</a>.</p>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <div class="shell">
+        <div class="footer-top">
+          <a class="brand" href="../" aria-label="Pocket Relay home"><img src="../assets/apple-touch-icon.png" width="40" height="40" alt="" loading="lazy"><span>Pocket Relay</span></a>
+          <nav aria-label="Footer"><a href="../">Home</a><a href="../support/">Support</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a></nav>
+        </div>
+        <p>&copy; 2026 Brett Pollak. All rights reserved.</p>
+        <p>Pocket Relay is an independent app. It is not affiliated with, endorsed by or sponsored by Google. Google and Antigravity are trademarks of Google LLC.</p>
+      </div>
+    </footer>
+  </body>
+</html>
