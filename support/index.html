@@ -56,10 +56,20 @@
         <ul>
           <li>An iPhone or iPad running iOS or iPadOS 26 or later, with Pocket Relay from the <a href="https://apps.apple.com/app/id6837743748">App Store</a>.</li>
           <li>A Mac, Windows PC or Linux computer running Google Antigravity.</li>
-          <li>The Pocket Relay Bridge companion on that computer. It can be added as a plugin inside Google Antigravity.</li>
+          <li>The Pocket Relay Bridge companion on that computer. Install it with the steps below.</li>
           <li>The computer must be on, awake and reachable from your device.</li>
         </ul>
         <p>No computer nearby? Choose <strong>Try the demo</strong> on the first screen to explore the app with sample data. Nothing runs on a computer in demo mode.</p>
+
+        <h2 id="bridge">Install Pocket Relay Bridge</h2>
+        <p>Pocket Relay Bridge is a small free companion that runs on your computer and connects the app to Google Antigravity. Install Google Antigravity and its command-line tool first and sign in. Then run one command on the computer.</p>
+        <h3>Mac or Linux</h3>
+        <p>Open Terminal and paste:</p>
+        <pre class="command"><code>curl -fsSL https://raw.githubusercontent.com/bpollak/pocket-relay-bridge/main/install.sh | bash</code></pre>
+        <h3>Windows</h3>
+        <p>Open PowerShell and paste:</p>
+        <pre class="command"><code>irm https://raw.githubusercontent.com/bpollak/pocket-relay-bridge/main/install.ps1 | iex</code></pre>
+        <p>The installer puts the bridge in your home folder, sets it to start when you log in, and adds the Pocket Relay panel to Antigravity. It does not need administrator rights. The source, a description of each step and removal instructions are at <a href="https://github.com/bpollak/pocket-relay-bridge">github.com/bpollak/pocket-relay-bridge</a>.</p>
 
         <h2>Pair with your computer</h2>
         <h3>Scan a QR code (fastest)</h3>
