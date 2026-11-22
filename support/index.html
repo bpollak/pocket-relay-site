@@ -44,63 +44,82 @@
         <div class="shell">
           <p class="eyebrow">Help</p>
           <h1>Support and setup</h1>
-          <p class="lede">How to pair Pocket Relay with your computer, and what to check when it will not connect.</p>
+          <p class="lede">Setup, everyday use and troubleshooting, and how to reach the developer.</p>
         </div>
       </header>
       <article class="shell prose">
         <div class="callout">
-          <p><strong>Get the app.</strong> Pocket Relay is on the App Store for iPhone and iPad: <a href="https://apps.apple.com/app/id6837743748">download Pocket Relay</a>.</p>
+          <p><strong>Contact support.</strong> Email <a href="mailto:brettcpollak@gmail.com">brettcpollak@gmail.com</a>. Developer: Brett Pollak. Replies typically within two business days. Please do not send pairing codes, tokens or passwords.</p>
         </div>
 
-        <h2 id="requirements">What you need</h2>
+        <h2>What you need</h2>
         <ul>
-          <li>An iPhone or iPad running iOS or iPadOS 26 or later.</li>
+          <li>An iPhone or iPad running iOS or iPadOS 26 or later, with Pocket Relay from the <a href="https://apps.apple.com/app/id6837743748">App Store</a>.</li>
           <li>A Mac, Windows PC or Linux computer running Google Antigravity.</li>
-          <li>Pocket Relay Bridge, a small companion that runs on that computer. It can be added as a plugin inside Google Antigravity.</li>
+          <li>The Pocket Relay Bridge companion on that computer. It can be added as a plugin inside Google Antigravity.</li>
           <li>The computer must be on, awake and reachable from your device.</li>
         </ul>
+        <p>No computer nearby? Choose <strong>Try the demo</strong> on the first screen to explore the app with sample data. Nothing runs on a computer in demo mode.</p>
 
-        <h2 id="pairing">Pair with your computer</h2>
+        <h2>Pair with your computer</h2>
         <h3>Scan a QR code (fastest)</h3>
         <ol>
           <li>On your computer, open the Pocket Relay panel in Antigravity, or choose “Pair iPhone or iPad…” from the Pocket Relay Bridge menu bar icon. A pairing QR code appears.</li>
-          <li>Open Pocket Relay on your iPhone or iPad and choose to connect your computer.</li>
-          <li>Scan the QR code. The app asks for camera access the first time; the camera is used only for this.</li>
+          <li>Open Pocket Relay on your iPhone or iPad and tap <strong>Scan QR Code</strong>.</li>
+          <li>Point the camera at the code. The app asks for camera access the first time; the camera is used only for this. You can also scan the code with the iPhone Camera app.</li>
         </ol>
         <h3>Enter a 6‑digit code</h3>
         <ol>
           <li>Connect your device and your computer to the same Wi‑Fi network.</li>
-          <li>In the app, pick your computer from the list of nearby computers.</li>
-          <li>Enter the 6‑digit code. Codes last 10 minutes.</li>
+          <li>In the app, pick your computer from the list of nearby computers. A pairing page opens on your computer with a 6‑digit code.</li>
+          <li>Enter the code in the app. Codes last 10 minutes.</li>
         </ol>
 
-        <h2 id="troubleshooting">Troubleshooting</h2>
+        <h2>Using the app</h2>
+        <h3>What does the bar at the top of the chat mean?</h3>
+        <p>It shows what your agent is doing in a few words, such as “Thinking”, “Reading files”, “Editing files” or “Running a command”, with a count of the steps so far. When it reads “Needs your approval” or “Has a question for you”, tap it to jump to the request.</p>
+        <h3>How do approvals work?</h3>
+        <p>When the agent wants to run a command or change something, a card shows what it wants to do. <strong>Deny</strong> refuses it, <strong>Allow Once</strong> permits this one action, and <strong>Always</strong> permits that kind of action from then on. You can change how often the agent asks from the policy control at the top of the chat.</p>
+        <h3>Where did the commands and code go?</h3>
+        <p>Each reply summarises the agent’s work in one line, such as “Completed 4 steps”. Tap the line to see a short list of the steps. The full output stays on your computer.</p>
+        <h3>How do I stop the agent?</h3>
+        <p>Tap the red stop button beside the message box while it is working.</p>
+        <h3>How do I dictate?</h3>
+        <p>Tap the Voice Mode button beside the message box and allow microphone and speech recognition access when asked.</p>
+        <h3>How do I put the keyboard away?</h3>
+        <p>Tap the conversation, or drag the conversation downward.</p>
+        <h3>Can I turn the animated character off?</h3>
+        <p>Yes. Open Settings in the app and switch off Animated Character under App Preferences. A plain icon is shown instead.</p>
+
+        <h2>Troubleshooting</h2>
         <h3>The app cannot reach my computer</h3>
-        <p>Check that the computer is turned on and awake. A computer that is asleep cannot be reached. Then check that Google Antigravity and Pocket Relay Bridge are running on it.</p>
+        <p>Check that the computer is turned on and awake. A computer that is asleep cannot be reached. Then check that Google Antigravity and Pocket Relay Bridge are running on it, and that your device is on the same Wi‑Fi or the same private network as the computer.</p>
         <h3>My computer is not in the nearby list</h3>
-        <p>The nearby list shows computers on the same Wi‑Fi as your device. Make sure both are on the same network, or pair by scanning the QR code instead.</p>
+        <p>The nearby list shows computers on the same Wi‑Fi as your device. Make sure both are on the same network and that Pocket Relay has Local Network access in the Settings app. Guest and some office networks block devices from seeing each other; pair by scanning the QR code instead.</p>
         <h3>The code was not accepted</h3>
-        <p>Pairing codes last 10 minutes. If yours has expired, pick your computer in the app again to get a new code, then enter that one.</p>
-        <h3>It works at home but not elsewhere</h3>
-        <p>The app has no servers of its own. It connects to your computer over your local network or your own private network, so your device must be able to reach the computer on one of those.</p>
+        <p>Pairing codes last 10 minutes and work once. If yours has expired, pick your computer in the app again to get a new code, then enter that one.</p>
+        <h3>The camera will not scan the code</h3>
+        <p>Check that Pocket Relay has Camera access in the Settings app, raise the screen brightness on your computer, and hold the device steady about a hand’s length from the code.</p>
+        <h3>The agent stopped with a problem</h3>
+        <p>The status bar turns grey and reads “Stopped with a problem”. The message from your computer is shown in the chat. Check the agent on your computer, then send your request again.</p>
 
-        <h2 id="remove">Remove a computer</h2>
-        <p>In the app, open Manage Hosts and delete the computer. This removes that computer and its pairing from the app. To remove everything the app has stored, delete the app.</p>
+        <h2>Managing computers and data</h2>
+        <h3>Remove a computer</h3>
+        <p>In the app, open Manage Hosts and delete the computer. This removes that computer and its pairing from the app.</p>
+        <h3>Remove everything</h3>
+        <p>Delete the app to remove everything it has stored on your device. Conversation history kept by the companion stays on your computer until you remove it there.</p>
+        <h3>Where does my data go?</h3>
+        <p>Between your device and your own computer. See the <a href="../privacy/">privacy policy</a>.</p>
 
-        <h2 id="demo">Demo mode</h2>
-        <p>Pocket Relay has a built-in demo mode that lets you try the app with sample data, without a computer. In demo mode nothing runs on a computer.</p>
-
-        <h2 id="contact">Contact</h2>
-        <!-- CONTACT_EMAIL_TBD -->
-        <p>Contact details will be added before public release.</p>
-        <p>Developer: Brett Pollak. See also the <a href="../privacy/">privacy policy</a> and <a href="../terms/">terms of use</a>.</p>
+        <h2>About</h2>
+        <p>Pocket Relay is an independent app. It is not affiliated with, endorsed by or sponsored by Google. Google and Antigravity are trademarks of Google LLC.</p>
       </article>
     </main>
     <footer class="site-footer">
       <div class="shell">
         <div class="footer-top">
           <a class="brand" href="../" aria-label="Pocket Relay home"><img src="../assets/apple-touch-icon.png" width="40" height="40" alt="" loading="lazy"><span>Pocket Relay</span></a>
-          <nav aria-label="Footer"><a href="../">Home</a><a href="../support/">Support</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a></nav>
+          <nav aria-label="Footer"><a href="../">Home</a><a href="../support/">Support</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a><a href="mailto:brettcpollak@gmail.com">Contact</a></nav>
         </div>
         <p>&copy; 2026 Brett Pollak. All rights reserved.</p>
         <p>Pocket Relay is an independent app. It is not affiliated with, endorsed by or sponsored by Google. Google and Antigravity are trademarks of Google LLC.</p>

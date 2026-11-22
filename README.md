@@ -30,5 +30,3 @@ grep -rl 'bpollak.github.io/pocket-relay-site' . | xargs sed -i '' 's#https://bp
 
 ## Before public release
 
-- Add contact details where the pages say "Contact details will be added before public release." (search for `CONTACT_EMAIL_TBD`).
-- Confirm the terms of use (search for `REVIEW:`).
