@@ -14,19 +14,19 @@ Plain HTML and CSS. No framework, no build step, no external requests. The anima
 
 ## Publishing
 
-The site is published with GitHub Pages from the root of the `main` branch, as a project site at `https://bpollak.github.io/pocket-relay-site/`. In the repository settings choose Pages, then "Deploy from a branch", branch `main`, folder `/ (root)`.
+The site is published with GitHub Pages from the root of the `main` branch, as a project site at `https://pocketrelay.app/`. In the repository settings choose Pages, then "Deploy from a branch", branch `main`, folder `/ (root)`.
 
 All internal links are relative, so the site works from any folder.
 
 ## If the address changes
 
-The base URL `https://bpollak.github.io/pocket-relay-site/` appears in one marked block in the `<head>` of each HTML file, and in `robots.txt` and `sitemap.xml`. Replace it everywhere with one command:
+The base URL `https://pocketrelay.app/` appears in one marked block in the `<head>` of each HTML file, and in `robots.txt` and `sitemap.xml`. Replace it everywhere with one command:
 
 ```sh
-grep -rl 'bpollak.github.io/pocket-relay-site' . | xargs sed -i '' 's#https://bpollak.github.io/pocket-relay-site/#https://NEW-ADDRESS/#g'
+grep -rl 'pocketrelay.app' . | xargs sed -i '' 's#https://pocketrelay.app/#https://NEW-ADDRESS/#g'
 ```
 
-`404.html` also has a `SITE_PATH` value (`/pocket-relay-site/`) near the top; set it to the new folder, or `/` for a custom domain.
+`404.html` also has a `SITE_PATH` value (`/`) near the top; set it to the new folder, or `/` for a custom domain.
 
 ## Before public release
 

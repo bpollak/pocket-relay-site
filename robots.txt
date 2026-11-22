@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Site base URL (change here if the site moves)
-Sitemap: https://bpollak.github.io/pocket-relay-site/sitemap.xml
+Sitemap: https://pocketrelay.app/sitemap.xml

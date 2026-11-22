@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Site base URL: https://bpollak.github.io/pocket-relay-site/ -->
+<!-- Site base URL: https://pocketrelay.app/ -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://bpollak.github.io/pocket-relay-site/</loc><lastmod>2026-11-22</lastmod></url>
-  <url><loc>https://bpollak.github.io/pocket-relay-site/support/</loc><lastmod>2026-11-22</lastmod></url>
-  <url><loc>https://bpollak.github.io/pocket-relay-site/privacy/</loc><lastmod>2026-11-22</lastmod></url>
-  <url><loc>https://bpollak.github.io/pocket-relay-site/terms/</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://pocketrelay.app/</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://pocketrelay.app/support/</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://pocketrelay.app/privacy/</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://pocketrelay.app/terms/</loc><lastmod>2026-11-22</lastmod></url>
 </urlset>
