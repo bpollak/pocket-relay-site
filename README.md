@@ -32,4 +32,3 @@ grep -rl 'bpollak.github.io/pocket-relay-site' . | xargs sed -i '' 's#https://bp
 
 - Add contact details where the pages say "Contact details will be added before public release." (search for `CONTACT_EMAIL_TBD`).
 - Confirm the terms of use (search for `REVIEW:`).
-- Replace the "Coming soon to the App Store" pill with the App Store link.
