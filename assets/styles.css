@@ -252,7 +252,7 @@ h3 { margin-bottom: 6px; font-size: 18px; line-height: 1.25; letter-spacing: -0.
   background: #15173c;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.16), 0 30px 80px rgba(11, 13, 38, 0.38), 0 20px 70px rgba(99, 102, 241, 0.22);
 }
-.phone img { width: 100%; border-radius: 40px; }
+.phone img, .phone video { display: block; width: 100%; height: auto; border-radius: 40px; }
 
 /* Feature strip */
 .strip { border-bottom: 1px solid var(--line); background: var(--white); }
@@ -528,7 +528,7 @@ h3 { margin-bottom: 6px; font-size: 18px; line-height: 1.25; letter-spacing: -0.
   .points, .pair-methods, .privacy-grid { grid-template-columns: minmax(0, 1fr); }
   .poses { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .phone { border-width: 9px; border-radius: 46px; }
-  .phone img { border-radius: 36px; }
+  .phone img, .phone video { border-radius: 36px; }
   .cta-row .button, .cta-row .soon-pill { width: 100%; }
   .soon-pill { justify-content: center; padding-inline: 18px; }
 }
