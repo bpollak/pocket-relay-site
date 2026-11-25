@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0b0d26">
+    <title>Set up Pocket Relay in 3 steps</title>
+    <meta name="description" content="Get Pocket Relay working in about two minutes: install the free Pocket Relay Bridge on the computer that runs Google Antigravity, then scan one QR code with your iPhone or iPad.">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" sizes="64x64" href="../assets/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/styles.css?v=setup1">
+
+    <!-- SITE BASE URL: https://pocketrelay.app/
+         Every absolute URL in this file is inside this block (down to END SITE BASE URL).
+         To move the site, replace that base string here and in robots.txt and sitemap.xml. -->
+    <link rel="canonical" href="https://pocketrelay.app/setup/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Pocket Relay">
+    <meta property="og:title" content="Set up Pocket Relay in 3 steps">
+    <meta property="og:description" content="Install the free Pocket Relay Bridge on your computer, then scan one QR code with your iPhone or iPad.">
+    <meta property="og:url" content="https://pocketrelay.app/setup/">
+    <meta property="og:image" content="https://pocketrelay.app/assets/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="The Pocket Relay app icon, a round violet character with a cyan ring, beside the name Pocket Relay.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Set up Pocket Relay in 3 steps">
+    <meta name="twitter:description" content="Install the free Pocket Relay Bridge on your computer, then scan one QR code with your iPhone or iPad.">
+    <meta name="twitter:image" content="https://pocketrelay.app/assets/og.png">
+    <!-- END SITE BASE URL -->
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="Pocket Relay home"><img src="../assets/apple-touch-icon.png" width="40" height="40" alt=""><span>Pocket Relay</span></a>
+      <nav aria-label="Primary"><a class="nav-extra" href="../">Home</a><a class="nav-pill" href="./" aria-current="page">Setup</a><a class="nav-extra" href="../support/">Support</a><a class="nav-extra" href="../privacy/">Privacy</a></nav>
+    </header>
+
+    <main id="main">
+      <header class="page-hero on-dark">
+        <div class="shell">
+          <p class="eyebrow">Setup · about 2 minutes</p>
+          <h1>Get Pocket Relay working in 3 steps</h1>
+          <p class="lede">The app on your phone connects to Google Antigravity on your computer. To let it, you install one small free helper on that computer, then scan a QR code.</p>
+        </div>
+      </header>
+
+      <article class="shell prose">
+        <div class="callout on-phone">
+          <p><strong>Reading this on your phone?</strong> Steps 1 and 2 happen on your computer. Send this page to yourself, then open it there: <strong>pocketrelay.app/setup</strong></p>
+          <p><button class="button solid share-btn" type="button" hidden>Send this page to my computer</button></p>
+        </div>
+
+        <ol class="setup-steps">
+          <li id="step-1">
+            <p class="step-where">On your computer</p>
+            <h2>Have Google Antigravity ready</h2>
+            <p>Install <a href="https://antigravity.google/">Google Antigravity</a> and sign in. Pocket Relay also needs Antigravity’s command-line tool, called <code>agy</code>. If you have not installed it, run one of these:</p>
+            <h3>Mac or Linux: open Terminal and paste</h3>
+            <pre class="command"><code>curl -fsSL https://antigravity.google/cli/install.sh | bash</code></pre>
+            <h3>Windows: open PowerShell and paste</h3>
+            <pre class="command"><code>irm https://antigravity.google/cli/install.ps1 | iex</code></pre>
+            <p class="step-check">Check: type <code>agy --version</code> in a new Terminal or PowerShell window. If it prints a version number, you are ready.</p>
+          </li>
+
+          <li id="step-2">
+            <p class="step-where">On your computer</p>
+            <h2>Install Pocket Relay Bridge</h2>
+            <p>The bridge is a small free helper that lets your phone talk to Antigravity. Paste one command:</p>
+            <h3>Mac or Linux: in Terminal</h3>
+            <pre class="command"><code>curl -fsSL https://raw.githubusercontent.com/bpollak/pocket-relay-bridge/main/install.sh | bash</code></pre>
+            <h3>Windows: in PowerShell</h3>
+            <pre class="command"><code>irm https://raw.githubusercontent.com/bpollak/pocket-relay-bridge/main/install.ps1 | iex</code></pre>
+            <p>It needs no administrator password, installs only into your home folder, and starts by itself when you log in, so you do this once.</p>
+            <p class="step-check">Check: the installer ends with “Pocket Relay Bridge is running” and opens a pairing page with a QR code in your browser. You will also find the same QR code in a <strong>Pocket Relay</strong> panel inside Antigravity.</p>
+          </li>
+
+          <li id="step-3">
+            <p class="step-where">On your iPhone or iPad</p>
+            <h2>Scan the QR code</h2>
+            <p>Open Pocket Relay, tap <strong>Scan QR or Manage Hosts</strong>, then <strong>Scan QR Code</strong>, and point the camera at the code on your computer. That’s it: your computer appears in the app.</p>
+            <p>No camera handy? With your phone and computer on the same Wi‑Fi, tap <strong>Connect Your Computer</strong>, pick your computer from the list, and enter the 6‑digit code shown on the computer.</p>
+            <p class="step-check">Check: send a first message such as “What is in this project?” You should see the status line change to “Thinking” and then a reply.</p>
+          </li>
+        </ol>
+
+        <h2>Good to know</h2>
+        <ul>
+          <li><strong>Keep the computer on and awake.</strong> The agent runs on your computer, so a sleeping computer cannot answer.</li>
+          <li><strong>Same network.</strong> Your phone reaches the computer over the same Wi‑Fi, or over a private network you run, such as Tailscale.</li>
+          <li><strong>Just looking?</strong> Choose <strong>Try the demo</strong> in the app to explore it with sample data, no computer needed.</li>
+        </ul>
+
+        <h2>If something does not work</h2>
+        <ul>
+          <li><strong>“agy was not found”</strong> when installing the bridge: do step 1, open a new Terminal or PowerShell window, and run the bridge command again.</li>
+          <li><strong>No QR code appeared:</strong> open <code>http://127.0.0.1:8765/pair</code> in a browser on the computer.</li>
+          <li><strong>The app cannot reach the computer:</strong> check that the computer is awake and on the same Wi‑Fi as your phone. Guest and some office networks block this; try a home network.</li>
+        </ul>
+        <p>More answers are on the <a href="../support/">support page</a>, or email <a href="mailto:brettcpollak@gmail.com">brettcpollak@gmail.com</a>. Please do not send pairing codes or passwords.</p>
+        <p class="fine-print">Pocket Relay is an independent app. It is not affiliated with, endorsed by or sponsored by Google. Google and Antigravity are trademarks of Google LLC. The bridge’s source and removal instructions are at <a href="https://github.com/bpollak/pocket-relay-bridge">github.com/bpollak/pocket-relay-bridge</a>.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell">
+        <div class="footer-top">
+          <a class="brand" href="../" aria-label="Pocket Relay home"><img src="../assets/apple-touch-icon.png" width="40" height="40" alt="" loading="lazy"><span>Pocket Relay</span></a>
+          <nav aria-label="Footer"><a href="../">Home</a><a href="./">Setup</a><a href="../support/">Support</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a><a href="mailto:brettcpollak@gmail.com">Contact</a></nav>
+        </div>
+        <p>&copy; 2026 Brett Pollak. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      (function () {
+        var b = document.querySelector('.share-btn');
+        if (b && navigator.share) {
+          b.hidden = false;
+          b.addEventListener('click', function () {
+            navigator.share({ title: 'Set up Pocket Relay', text: 'Open this on the computer that runs Google Antigravity:', url: 'https://pocketrelay.app/setup/' }).catch(function () {});
+          });
+        }
+        document.querySelectorAll('.setup-steps pre.command').forEach(function (pre) {
+          if (!navigator.clipboard) return;
+          var btn = document.createElement('button');
+          btn.type = 'button'; btn.className = 'copy-btn'; btn.textContent = 'Copy';
+          btn.addEventListener('click', function () {
+            navigator.clipboard.writeText(pre.querySelector('code').textContent).then(function () {
+              btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy'; }, 1600);
+            });
+          });
+          pre.appendChild(btn);
+        });
+      })();
+    </script>
+  </body>
+</html>
