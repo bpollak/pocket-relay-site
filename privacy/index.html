@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0b0d26">
     <title>Pocket Relay: privacy policy for iPhone and iPad</title>
-    <meta name="description" content="Privacy policy for Pocket Relay on iPhone and iPad. The app has no servers of its own, connects only to computers you pair, and contains no advertising, analytics or tracking.">
+    <meta name="description" content="Privacy policy for Pocket Relay on iPhone and iPad. The app connects only to computers you pair, the developer cannot read what passes between them, and it contains no advertising, analytics or tracking.">
     <meta name="robots" content="index, follow">
     <link rel="icon" type="image/png" sizes="64x64" href="../assets/favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
@@ -18,7 +18,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Pocket Relay">
     <meta property="og:title" content="Pocket Relay: privacy policy for iPhone and iPad">
-    <meta property="og:description" content="Privacy policy for Pocket Relay on iPhone and iPad. The app has no servers of its own, connects only to computers you pair, and contains no advertising, analytics or tracking.">
+    <meta property="og:description" content="Privacy policy for Pocket Relay on iPhone and iPad. The app connects only to computers you pair, the developer cannot read what passes between them, and it contains no advertising, analytics or tracking.">
     <meta property="og:url" content="https://pocketrelay.app/privacy/">
     <meta property="og:image" content="https://pocketrelay.app/assets/og.png">
     <meta property="og:image:width" content="1200">
@@ -26,7 +26,7 @@
     <meta property="og:image:alt" content="The Pocket Relay app icon, a round violet character with a cyan ring, beside the name Pocket Relay.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Pocket Relay: privacy policy for iPhone and iPad">
-    <meta name="twitter:description" content="Privacy policy for Pocket Relay on iPhone and iPad. The app has no servers of its own, connects only to computers you pair, and contains no advertising, analytics or tracking.">
+    <meta name="twitter:description" content="Privacy policy for Pocket Relay on iPhone and iPad. The app connects only to computers you pair, the developer cannot read what passes between them, and it contains no advertising, analytics or tracking.">
     <meta name="twitter:image" content="https://pocketrelay.app/assets/og.png">
     <meta name="twitter:image:alt" content="The Pocket Relay app icon, a round violet character with a cyan ring, beside the name Pocket Relay.">
     <!-- END SITE BASE URL -->
@@ -45,22 +45,26 @@
           <p class="eyebrow">Privacy</p>
           <h1>Privacy policy</h1>
           <p class="lede">What Pocket Relay does and does not do with your information.</p>
-          <p class="meta">Effective November 22, 2026</p>
+          <p class="meta">Effective November 24, 2026</p>
         </div>
       </header>
       <article class="shell prose">
         <div class="callout">
-          <p><strong>Summary.</strong> Pocket Relay has no servers of its own and no accounts. It connects only to computers you pair. The developer does not receive or store your prompts, files, approvals or voice. The app contains no advertising, analytics or tracking, and nothing is sold or shared for advertising.</p>
+          <p><strong>Summary.</strong> Pocket Relay has no accounts. It connects only to computers you pair. When your device is away from your computer’s network, the connection can pass through the Pocket Relay relay, encrypted end to end so the relay cannot read it. The developer does not receive or store your prompts, files, approvals or voice. The app contains no advertising, analytics or tracking, and nothing is sold or shared for advertising.</p>
         </div>
 
         <h2>Who this policy covers</h2>
         <p>This policy covers the Pocket Relay app for iPhone and iPad, the Pocket Relay Bridge companion that runs on your computer, this website, and support email. The developer is Brett Pollak, an individual.</p>
 
         <h2>How Pocket Relay works</h2>
-        <p>Pocket Relay is a remote control for the coding agent on your own computer. The app talks to the Pocket Relay Bridge companion on a computer you have paired, over your local network or a private network that you run. There is no Pocket Relay server in between, so what you send and what comes back travels between your device and your computer.</p>
+        <p>Pocket Relay is a remote control for the coding agent on your own computer. The app talks to the Pocket Relay Bridge companion on a computer you have paired. On the same network, it connects to the computer directly.</p>
+        <h3>Remote access through the relay</h3>
+        <p>When your device cannot reach the computer directly, for example on mobile data, the app connects through the Pocket Relay relay (relay.pocketrelay.app). That traffic is encrypted end to end between your device and your computer, with a key created on your computer that reaches your device only through the pairing QR code. The relay never has the key, so it cannot read or change what passes through, and it does not store it. The relay, like any internet service, sees the network addresses of the device and computer while they are connected. The companion’s owner can turn remote access off on the computer.</p>
+        <h3>Alerts</h3>
+        <p>If you allow notifications, your computer can tell you when the agent needs your approval, asks a question or finishes, even when the app is closed. Apple only delivers notifications signed with the app developer’s key, so your computer sends a small request to the Pocket Relay push service (push.pocketrelay.app), which signs it and passes it to Apple. The request contains the kind of event, your computer’s name and your device’s push token. The command, question or conversation title is included only if you turn on <strong>Show Details in Alerts</strong>. Prompts, replies, code and files are never sent to it. The push service does not store requests. You can turn alerts off in the app’s Settings.</p>
 
         <h2>Information the developer collects</h2>
-        <p>None through the app or the companion. The developer does not receive your prompts, attachments, files, approvals, terminal output, voice, device identifiers or usage data. The app has no sign-in, and it contains no advertising, analytics, crash-reporting or tracking software.</p>
+        <p>None through the app or the companion. The developer does not receive your prompts, attachments, files, approvals, terminal output, voice or usage data. The relay and push service described above pass data along without keeping it. The app has no sign-in, and it contains no advertising, analytics, crash-reporting or tracking software.</p>
         <p>The only personal information the developer receives is what you choose to send in a support email, described below.</p>
 
         <h2>Information stored on your device</h2>
@@ -88,7 +92,7 @@
         <p>You can change these at any time in the Settings app on your device.</p>
 
         <h2>Security</h2>
-        <p>Only a device that has completed pairing with a computer can connect to it. Pairing codes expire after 10 minutes. When you connect over a private network that provides HTTPS, the connection is encrypted. A connection made directly over your local Wi‑Fi may not be encrypted, so pair and use the app on networks you trust. No method of storage or transmission is completely secure.</p>
+        <p>Only a device that has completed pairing with a computer can connect to it. Pairing codes expire after 10 minutes. Connections through the relay are encrypted end to end. When you connect over a private network that provides HTTPS, the connection is encrypted. A connection made directly over your local Wi‑Fi may not be encrypted, so pair and use the app on networks you trust. No method of storage or transmission is completely secure.</p>
 
         <h2>Sharing and sale</h2>
         <p>The developer does not sell personal information, does not share it for advertising, and does not track you across other companies’ apps or websites.</p>
