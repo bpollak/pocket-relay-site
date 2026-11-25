@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Pocket Relay Bridge installer (Mac and Linux).
+#   curl -fsSL https://pocketrelay.app/install | bash
+# This short address runs the installer published at
+# https://github.com/bpollak/pocket-relay-bridge/blob/main/install.sh
+# Read that file to see every step before you run it.
+set -euo pipefail
+curl -fsSL https://raw.githubusercontent.com/bpollak/pocket-relay-bridge/main/install.sh | bash -s -- "$@"
